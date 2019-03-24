@@ -8,9 +8,9 @@ import com.google.gson.Gson
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_main.*
 import net.azarquiel.darksky.R
+import net.azarquiel.darksky.adapter.CustomAdapter
 import net.azarquiel.darksky.model.Result
 import net.azarquiel.darksky.model.Utilidades
-import net.azarquiel.recyclerclase.adapter.CustomAdapter
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.indeterminateProgressDialog
 import org.jetbrains.anko.uiThread
@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         tvCurrentlyMain.text=result.currently.summary
         tvTemperaturaMain.text="${Utilidades.farToCel(result.currently.temperature)}º"
         tvPrecipitacionMain.text="${result.currently.precipProbability}%"
-        var adapter=CustomAdapter(this,R.layout.rowtiempo,result.daily.data)
+        var adapter= CustomAdapter(this,R.layout.rowtiempo,result.daily.data)
         rvTiempo.layoutManager=LinearLayoutManager(this)
         rvTiempo.adapter=adapter
     }

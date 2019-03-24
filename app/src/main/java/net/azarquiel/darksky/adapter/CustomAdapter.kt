@@ -1,4 +1,4 @@
-package net.azarquiel.recyclerclase.adapter
+package net.azarquiel.darksky.adapter
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
@@ -10,9 +10,6 @@ import kotlinx.android.synthetic.main.rowtiempo.view.*
 import net.azarquiel.darksky.model.Dias
 import net.azarquiel.darksky.model.Utilidades
 
-/**
- * Created by pacopulido on 9/10/18.
- */
 class CustomAdapter(val context: Context,
                     val layout: Int,
                     val dataList: List<Dias>) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
