@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DarkSky</string>
+    <string name="summary">Summary</string>
+    <string name="precipitacion">Precip.</string>
+    <string name="temperatura">Temp.</string>
+    <string name="maxima">Max</string>
+    <string name="minima">Min</string>
+    <string name="guion">-</string>
+    <string name="fecha">Time</string>
+</resources>
